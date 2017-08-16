@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { Route, NavLink } from "react-router-dom";
-import ProductDetail from "../component/ProductDetail";
+import { NavLink } from "react-router-dom";
+// import ProductDetail from "../component/ProductDetail";
 
 const data =  [
-        {id: 1, name: "Product 1"},
-        {id: 2, name: "Product 2"},
-        {id: 3, name: "Product 3"},
-        {id: 4, name: "Product 4"},
-        {id: 5, name: "Product 5"},
+        {id: 11, name: "Product 1"},
+        {id: 22, name: "Product 2"},
+        {id: 33, name: "Product 3"},
+        {id: 44, name: "Product 4"},
+        {id: 55, name: "Product 5"},
     ]
 
 
@@ -19,12 +19,12 @@ class Products extends Component {
                 <ul>
                     {
                         data.map((value) => {
-                            return <li key={value.id}><NavLink to={`${this.props.match.url}/${value.id}`}>{value.name}</NavLink></li>
+                            return <li key={value.id}><NavLink to={`${this.props.match.url}/${value.name}`}>{value.name}</NavLink></li>
                         })
                     }
                 </ul>
-                < Route path={`this.props.match.url/:proId`} component={ProductDetail} />
-                <p><NavLink to="/">Back</NavLink></p>
+                {/*< Route path={`this.props.match.url/:proId`} component={ProductDetail} />*/}
+
             </div>
         )
     }
