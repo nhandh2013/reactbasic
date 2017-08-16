@@ -1,0 +1,46 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Pizza",
+      "quality": "10",
+      "thumb": "img-1.jpg",
+      "category": "food"
+    },
+    {
+      "id": 2,
+      "name": "Hambugger",
+      "quality": "2",
+      "thumb": "img-2.jpg",
+      "category": "food"
+    },
+    {
+      "id": 3,
+      "name": "Fruit juice",
+      "quality": "7",
+      "thumb": "img-3.jpg",
+      "category": "drink"
+    },
+    {
+      "id": 4,
+      "name": "Apple juice",
+      "quality": "4",
+      "thumb": "img-4.jpg",
+      "category": "drink"
+    },
+    {
+      "id": 5,
+      "name": "Hotdog",
+      "quality": "2",
+      "thumb": "img-5.jpg",
+      "category": "food"
+    },
+    {
+      "id": 6,
+      "name": "Hotpot",
+      "quality": "8",
+      "thumb": "img-6.jpg",
+      "category": "food"
+    }
+  ]
+}
