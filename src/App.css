@@ -63,10 +63,10 @@ ul {
 .card__title:before {
   display: inline-block;
   width: 1em;
-  content: '';
+  content: '>';
 }
 .card__title--is-open:before {
-  content: '';
+  color: red;
 }
 .checklist__task:first-child {
   margin-top: 10px;
@@ -78,86 +78,3 @@ ul {
   color: #d66;
   content: "+";
 }
-/** {*/
-  /*margin: 0;*/
-  /*padding: 0;*/
-/*}*/
-/*header {*/
-  /*border-bottom: 1px solid #000;*/
-/*}*/
-/*header ul {*/
-  /*margin-left: 0;*/
-  /*padding-left: 0;*/
-  /*margin: 0;*/
-  /*overflow: hidden;*/
-/*}*/
-/*header li {*/
-  /*list-style: none;*/
-  /*margin: 10px  0;*/
-  /*float: left;*/
-/*}*/
-/*header li a {*/
-  /*display: inline-block;*/
-  /*width: 100px;*/
-  /*text-align: center;*/
-  /*padding: 10px;*/
-  /*background: #777;*/
-  /*color: white;*/
-  /*text-decoration: none;*/
-/*}*/
-/*main {*/
-  /*overflow: hidden;*/
-/*}*/
-/*.container {*/
-  /*float: left;*/
-  /*width: 75%;*/
-/*}*/
-/*aside {*/
-  /*width: 25%;*/
-  /*float: left;*/
-  /*background: #ccc;*/
-  /*height: 500px;*/
-/*}*/
-/*footer {*/
-  /*background-color: #ccc;*/
-  /*border-top: 1px solid #000;*/
-  /*height: 100px;*/
-/*}*/
-/*.selected {*/
-  /*background: #999;*/
-  /*color: red;*/
-/*}*/
-
-/*.listProducts {*/
-  /*background: pink;*/
-/*}*/
-/*.listProducts li {*/
-  /*list-style: none;*/
-  /*display: inline-block;*/
-  /*background-color: dimgrey;*/
-  /*margin: 10px;*/
-/*}*/
-/*.listProducts li a {*/
-  /*display: block;*/
-  /*color: white;*/
-  /*text-decoration: none;*/
-  /*padding: 10px;*/
-  /*text-align: center;*/
-  /*width: 100px;*/
-  /*height: 100px;*/
-/*}*/
-/*.hide {*/
-  /*display: none;*/
-/*}*/
-/*.show {*/
-  /*display: block;*/
-/*}*/
-
-/*.proItem {*/
-  /*margin-bottom: 10px;*/
-/*}*/
-/*.proItem .name,*/
-/*.proItem .price {*/
-  /*display: inline-block;*/
-  /*padding: 10px;*/
-/*}*/
