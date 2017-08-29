@@ -14,21 +14,15 @@ class Card extends React.Component {
     }
     render() {
         let cardDetails;
-        let child1 = React.createElement('li', null, 'First Text Content');
-        let child2 = React.createElement('li', null, 'Second Text Content');
-        let child3 = React.DOM.form(
-            {className: 'commentForm'},
-            React.DOM.input({type: 'text', placeholder: 'name'}),
-            React.DOM.input({type: 'text', placeholder: 'comment'}),
-            React.DOM.input({type: 'submit', value: 'Post' })
-        )
-        let divStyle = {
-            width: 200,
-            height: 30,
-            padding: 5,
-            backgroundColor: '#ee9900'
+        let sideColor = {
+            position: 'absolute',
+            zIndex: -1,
+            top: 0,
+            bottom: 0,
+            left: 0,
+            width: 7,
+            backgroundColor: this.props.color
         }
-        let parent = React.createElement('ul', {className: 'my-list'}, child1);
         if (this.state.showDetails) {
             cardDetails = (
                 <div className="card__details">
@@ -39,7 +33,7 @@ class Card extends React.Component {
         }
         return (
             <div className="card">
-                <div style={divStyle}>{parent}</div>
+                <div style={sideColor}/>
                 <div className={this.state.showDetails ? "card__title card__title--is-open" : "card__title"} onClick={this.toggleDetails.bind(this)}>{this.props.title}</div>
                 {cardDetails}
             </div>
